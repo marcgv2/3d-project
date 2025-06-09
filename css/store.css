@@ -1,0 +1,207 @@
+/* main format */
+body {
+    font-family: Minecraft, sans-serif;
+    margin: 20px;
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+}
+
+/* top links stick to the right */
+.navbar {
+    float: right;
+}
+
+/* making them pretty */
+.navbar a {
+    color:whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color:  rgb(24, 24, 24);
+    background-color: whitesmoke;
+}
+
+.navbar button {
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    text-decoration: none;
+    background: rgb(24, 24, 24);
+    border: none;
+    font-size: large;
+    font-family: Minecraft, sans-serif;
+    padding: 11px 16px;
+}
+
+.navbar button:hover {
+    color: rgb(24, 24, 24);
+    background-color: whitesmoke;
+}
+
+/* title formatting */
+.title-div {
+    padding: 14px 16px;
+    padding-bottom: 5%;
+    padding-top: 50px;
+    font-size: x-large;
+}
+
+/* making it pretty */
+.title:hover{
+    color: black;
+    /* blue-white gradient */ 
+    text-shadow: 0 0 50px #fff, 0 0 5px #ff05c0, 0 0 7.5px #3f01d1, 0 0 10px #ffffff, 0 0 17.5px #ffffff, 0 0 20px #ff0000, 0 0 25px #ffffff, 0 0 37.5px #ff00de;
+    animation: float  5s cubic-bezier(.68,.35,.4,.68) infinite;
+}
+
+/* PRODUCTES */
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-card {
+    width: 300px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-title:hover {
+    /* purple-whiteish gradient */
+    text-shadow: 0 0 50px #021061, 0 0 8px #0335a1, 0 0 8px #1a9ce8, 0 0 8px #34dcfa, 0 0 8px #90fcfb, 0 0 8px #f7fcfc;
+}
+
+.golden {
+    color: whitesmoke;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.golden:hover {
+    /* purple-whiteish gradient */
+    text-shadow: 0 0 50px #00ff15, 0 0 8px #1bf538, 0 0 8px #6bff6b, 0 0 8px hwb(128 11% 0%), 0 0 8px #13e040, 0 0 8px #0af73d;
+}
+
+.product-description {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    display: block;
+    font-size: 1.3em;
+    color: #58f587;
+    margin-bottom: 15px;
+}
+
+.product-button {
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.product-button:hover {
+    background-color: whitesmoke;
+    color: rgb(24, 24, 24);
+    /* green-white gradient */
+    text-shadow: 0 0 50px #256102, 0 0 7px #289c0b,0 0 7px #17bf17, 0 0 7px #17bf17, 0 0 7px #58f587, 0 0 7px #9dfcb9, 0 0 7px #ffffff;
+}
+
+/* MATHS SUB LINKS */
+.Objectives {
+    justify-content: center;
+    display: block;
+    font-size: large;   
+}
+
+.Objectives a{
+    color: whitesmoke;
+    padding-top: 100px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Objectives a:hover {
+    /* purple-whiteish gradient */
+    text-shadow: 0 0 50px #021061, 0 0 8px #0335a1, 0 0 8px #1a9ce8, 0 0 8px #34dcfa, 0 0 8px #90fcfb, 0 0 8px #f7fcfc;
+}
+
+/* SCIENCE SUB LINKS */
+.AbtUs {
+    justify-content: center;
+    display: block;
+    font-size: large;
+    padding-top: 10%;
+}
+
+.AbtUs a {
+    color: whitesmoke;
+    padding-top: 100px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.AbtUs a:hover {
+    /* green-white gradient */
+    text-shadow: 0 0 50px #256102, 0 0 7px #289c0b,0 0 7px #17bf17, 0 0 7px #17bf17, 0 0 7px #58f587, 0 0 7px #9dfcb9, 0 0 7px #ffffff;
+}
+
+.left {
+    text-align: left;
+}
+
+.disclamer {
+    font-size: small;
+    padding-left: 20px;
+}
+
+/* setting the font */
+@font-face {
+    font-family: Minecraft, sans-serif;
+    src: url(/fonts/Minecraft.ttf), format(ttf);
+}
+
+/* setting title animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
